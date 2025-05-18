@@ -1,4 +1,3 @@
-
 echo "🔍 Initializing Terraform..."
 terraform init -reconfigure
 

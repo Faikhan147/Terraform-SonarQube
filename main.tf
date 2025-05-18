@@ -12,6 +12,6 @@ resource "aws_instance" "sonarqube_instance" {
   user_data = file("${path.module}/setup_sonarqube.sh")
 
   tags = {
-    Name = "SonarQube-Machine"
+    Name = "SonarQube-Server"
   }
 }

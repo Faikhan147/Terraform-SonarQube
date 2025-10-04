@@ -1,6 +1,6 @@
 region = "us-east-1"
 instance_profile_name = "SonarQube-instance-profile"
-jenkins_role_name = "sonarqube-ssm-role"
+sonarqube_role_name = "sonarqube-ssm-role"
 template_name = "SonarQube-template"
 ami_id             = "ami-0360c520857e3138f"
 instance_type      = "t2.medium"

@@ -24,11 +24,13 @@ resource "aws_launch_template" "this" {
   block_device_mappings {
     device_name = "/dev/sda1"
     ebs {
-      volume_size           = var.volume_size
-      volume_type           = var.volume_type
+      volume_size           = var.root_volume_size
+      volume_type           = var.root_volume_type
+      iops                  = var.root_volume_iops
+      throughput            = var.root_volume_throughput
       delete_on_termination = true   # ✅ recommended
-      kms_key_id            = var.kms_key_arn   # <- yahan attach karo apni existing KMS key
       encrypted             = true
+      kms_key_id            = var.kms_key_arn   # <- yahan attach karo apni existing KMS key
     }
   }
 

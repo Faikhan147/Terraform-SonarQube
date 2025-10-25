@@ -1,4 +1,4 @@
-region = "ap-southeast-2"
+region = "ap-southeast-1"
 instance_profile_name = "SonarQube-instance-profile"
 sonarqube_role_name = "sonarqube-ssm-role"
 template_name = "SonarQube-template"
